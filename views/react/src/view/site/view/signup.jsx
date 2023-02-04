@@ -56,7 +56,7 @@ function SignUp() {
     const { handleSubmit, control, formState: { errors }, setValue } = useForm({
         resolver: yupResolver(schema),
     });
-    
+
     const handleSetAgremment = () => {
         setValue("agree", !agreement);
         setAgremment(!agreement);

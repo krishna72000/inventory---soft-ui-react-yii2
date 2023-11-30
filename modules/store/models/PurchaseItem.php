@@ -56,7 +56,7 @@ class PurchaseItem extends \yii\db\ActiveRecord
             'id',
             'fitm',
             'name' => function ($model) {
-                return $model->fkItem->name;
+                return $model->fkItem?->name;
             },
             'qty',
             'rate'

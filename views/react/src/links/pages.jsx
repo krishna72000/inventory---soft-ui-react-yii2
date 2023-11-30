@@ -57,9 +57,10 @@ const sitePage = {
 }
 
 const pages = {
-    BASE_URL: "http://mystore.com/index.php",
+    // BASE_URL: "http://mystore.com/index.php",
+    BASE_URL: "http://localhost:8080",
     // BASE_URL: "http://krishna-acharya.rf.gd/web/index.php",
-    LOCAL_URL: "http://localhost:3000",
+    // LOCAL_URL: "http://localhost:8080",
     PROFILE: "/user",
     GUEST: "/guest",
     PROFILE_UPDATE: "/user/update",

@@ -54,7 +54,7 @@ class ItemVend extends \yii\db\ActiveRecord
         return [
             'id' => 'id',
             'name' => function ($model) {
-                return $model->fkVend->name;
+                return $model->fkVend?->name;
             },
             'vid' => 'fk_vend_id',
             'price' => 'sp',

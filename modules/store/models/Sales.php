@@ -129,15 +129,15 @@ class Sales extends \yii\db\ActiveRecord
                 return 1;
             },
             'customer' => function ($model) {
-                return $model->fkCustomer->nam;
+                return $model->fkCustomer?->nam;
             },
             'shipping',
             'pym_term',
             'create_by' =>  function ($model) {
-                return $model->fkUser->name;
+                return $model->fkUser?->name;
             },
             'store' =>  function ($model) {
-                return $model->fkStore->nam;
+                return $model->fkStore?->nam;
             },
             'create_at' => 'cat',
             'has_return',

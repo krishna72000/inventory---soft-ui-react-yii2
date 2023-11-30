@@ -127,15 +127,15 @@ class Purchase extends \yii\db\ActiveRecord
                 return 1;
             },
             'vend' => function ($model) {
-                return $model->fkVend->name;
+                return $model->fkVend?->name;
             },
             'shipping',
             'pym_term',
             'create_by' =>  function ($model) {
-                return $model->fkUser->name;
+                return $model->fkUser?->name;
             },
             'store' =>  function ($model) {
-                return $model->fkStore->nam;
+                return $model->fkStore?->nam;
             },
             'create_at' => 'cat',
             'has_return',

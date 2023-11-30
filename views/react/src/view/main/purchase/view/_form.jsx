@@ -161,7 +161,7 @@ const PurchaseForm = ({ control, handleSubmit, onSubmitHandler, isNewPurchase, e
                                                             }
                                                         }}
                                                         handleOptions={handleStore}
-                                                        error={fieldState.invalid}
+                                                        error={Boolean(fieldState.error)}
                                                     />
                                                     <SuiTypography textColor="error" variant="caption" component="span">{fieldState.error?.message}</SuiTypography>
                                                 </>

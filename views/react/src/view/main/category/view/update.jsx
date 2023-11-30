@@ -23,7 +23,6 @@ function CategoryUpdate() {
     const [catData, setCatData] = useState({});
     const { id, name } = useSelector(state => state.navPath["curr"]);
     const history = useHistory();
-    console.log(id,catData);
     async function loadData() {
         await getCategoryDetail(id)
             .then((res) => {

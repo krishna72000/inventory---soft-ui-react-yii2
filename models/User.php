@@ -230,12 +230,12 @@ class User extends \yii\db\ActiveRecord implements IdentityInterface
      */
     public function validatePassword($password)
     {
-        return md5($password) === $this->password;
+        return static::hashPassword($password) === $this->password;
     }
 
     public function validateOldPassword($password)
     {
-        return md5($password) === $this->password;
+        return static::hashPassword($password) === $this->password;
     }
 
     /**

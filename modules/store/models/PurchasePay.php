@@ -56,7 +56,7 @@ class PurchasePay extends \yii\db\ActiveRecord
         return [
             'id' => 'id',
             'name' => function ($model) {
-                return $model->fkUser->name;
+                return $model->fkUser?->name;
             },
             'amt',
             'cat'

@@ -10,7 +10,6 @@ import { getLineChart, getBarChart, getMiniCard } from "../model/list";
 import { getDashboard } from "../service";
 import { useDispatch, useSelector } from "react-redux";
 import { setDashboard } from "redux/action/dboardAction";
-import SmartFormAdd from "./create";
 function Dashboard() {
   const dboardData = useSelector(state => state.dboard);
   const dispatch = useDispatch();
